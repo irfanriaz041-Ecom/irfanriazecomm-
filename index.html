@@ -1,0 +1,1126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Irfan Riaz Portfolio</title>
+<meta name="description" content="Irfan Riaz is an Amazon Virtual Assistant, FBA Private Label specialist and PPC specialist in Lahore, Pakistan. Product research, listing SEO, Amazon and eBay PPC.">
+<meta name="keywords" content="Amazon Virtual Assistant Lahore, Amazon PPC Specialist, Amazon FBA Private Label, eBay PPC, Helium 10, listing optimization">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Irfan Riaz | Amazon Virtual Assistant and PPC Specialist">
+<meta property="og:description" content="Product research, listing SEO and Amazon and eBay PPC for growing sellers. Based in Lahore, Pakistan.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{color-scheme:light}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+/* Layout concept: navy bands (hero, achievements, contact) frame white content sections.
+   The profile card reads like an Amazon "product details" table. Orange is the only accent. */
+:root{
+  --font-display:"Sora","Segoe UI",system-ui,-apple-system,sans-serif;
+  --font-body:"Plus Jakarta Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+
+  --band:#081027; --band-2:#101C3E; --band-line:#22305A;
+  --on-band:#F3F6FC; --on-band-muted:#AEB9D0;
+  --accent:#FF9900; --accent-hover:#FFAB2E; --on-accent:#0A1230;
+  --paper:#F7F9FD; --ink:#0D1830; --ink-muted:#4F5C75; --paper-line:#D5DCEA;
+
+  --bg:#FFFFFF; --bg-alt:#F2F5FA; --card:#FFFFFF;
+  --fg:#0D1830; --muted:#4F5C75; --line:#DCE2EE;
+  --accent-ink:#B35400; --focus:#1D4ED8;
+  --placeholder:#EAEFF7; --placeholder-line:#B7C2D8;
+  --shadow:0 1px 2px rgba(13,24,48,.06),0 10px 28px rgba(13,24,48,.07);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1A3A; --bg-alt:#112146; --card:#142852;
+    --fg:#EEF2FA; --muted:#A5B1C9; --line:#243864;
+    --accent-ink:#FFA733; --focus:#FFB347;
+    --placeholder:#0F2048; --placeholder-line:#35508A;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1A3A; --bg-alt:#112146; --card:#142852;
+  --fg:#EEF2FA; --muted:#A5B1C9; --line:#243864;
+  --accent-ink:#FFA733; --focus:#FFB347;
+  --placeholder:#0F2048; --placeholder-line:#35508A;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%}
+h1,h2,h3{font-family:var(--font-display);text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.band :focus-visible{outline-color:var(--accent)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:16px;top:-60px;z-index:200;background:var(--accent);color:var(--on-accent);padding:10px 16px;border-radius:6px;font-weight:600}
+.skip:focus{top:calc(12px + env(safe-area-inset-top,0px))}
+.ic{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+.wrap{width:100%;max-width:1120px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band{background:var(--band);color:var(--on-band)}
+.sec{padding-block:clamp(56px,8vw,96px)}
+.sec.alt{background:var(--bg-alt)}
+.sec-head{max-width:640px;margin-bottom:36px}
+.sec h2{font-size:clamp(1.9rem,4vw,2.75rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:12px}
+.sec-head p{color:var(--muted);font-size:1.05rem;margin:0}
+.band .sec-head p{color:var(--on-band-muted)}
+.sec h3{font-size:1.1rem;line-height:1.3}
+.mono{font-family:var(--font-mono)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:6px;border:1.5px solid transparent;font:600 .98rem/1 var(--font-body);text-decoration:none;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--on-accent)}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-ghost{background:transparent;color:var(--on-band);border-color:var(--band-line)}
+.btn-ghost:hover{border-color:var(--accent)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--paper-line)}
+.btn-line:hover{border-color:var(--ink)}
+.btn-sm{min-height:40px;padding:0 14px;font-size:.88rem}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;border-bottom:1px solid var(--band-line)}
+.nav .wrap{display:flex;align-items:center;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;font-size:1.1rem;text-decoration:none}
+.mark{width:32px;height:32px;display:grid;place-items:center;background:var(--accent);color:var(--on-accent);border-radius:6px;font-size:.85rem;letter-spacing:-.02em}
+.nav-links{display:flex;gap:2px;margin:0 0 0 auto;padding:0;list-style:none}
+.nav-links a{display:block;padding:8px 12px;border-radius:6px;color:var(--on-band-muted);text-decoration:none;font-weight:500;font-size:.95rem}
+.nav-links a:hover,.nav-links a[aria-current="true"]{color:var(--on-band);background:var(--band-2)}
+.icon-btn{width:44px;height:44px;display:grid;place-items:center;border-radius:6px;border:1px solid var(--band-line);background:transparent;color:var(--on-band);cursor:pointer}
+.icon-btn:hover{border-color:var(--accent)}
+.menu-btn{display:none}
+@media (max-width:860px){
+  .theme-btn{margin-left:auto}
+  .menu-btn{display:grid}
+  .nav-links{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;margin:0;padding:8px max(16px,env(safe-area-inset-left,0px)) 16px;background:var(--band);border-bottom:1px solid var(--band-line)}
+  .nav.open .nav-links{display:flex}
+  .nav-links a{padding:12px}
+}
+
+/* hero */
+.hero{padding-block:clamp(48px,8vw,96px)}
+.hero-grid{display:grid;gap:clamp(32px,5vw,64px);grid-template-columns:minmax(0,1fr);align-items:center}
+@media (min-width:900px){.hero-grid{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}}
+.status{display:inline-flex;align-items:center;gap:8px;margin:0;padding:6px 12px;border:1px solid var(--band-line);border-radius:999px;font-family:var(--font-mono);font-size:.78rem;color:var(--on-band-muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:#3DDC84}
+.hero h1{font-size:clamp(2.9rem,9vw,5.25rem);line-height:.98;letter-spacing:-.035em;font-weight:800;margin:22px 0 16px}
+.headline{display:flex;flex-wrap:wrap;gap:4px 12px;margin:0 0 18px;font-family:var(--font-display);font-weight:600;font-size:clamp(1rem,1.7vw,1.2rem)}
+.headline span+span::before{content:"\2022";color:var(--accent);margin-right:12px}
+.tagline{max-width:52ch;color:var(--on-band-muted);font-size:1.1rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.pcard{width:100%;max-width:420px;margin-inline:auto;background:var(--band-2);border:1px solid var(--band-line);border-radius:10px;overflow:hidden}
+.photo{aspect-ratio:4/4.2;display:grid;place-items:center;background:linear-gradient(160deg,#18295C,#0B1636)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block}
+.mono-big{font-family:var(--font-display);font-weight:800;font-size:clamp(4rem,12vw,6rem);letter-spacing:-.05em;color:var(--accent)}
+.spec{margin:0;padding:4px 18px 10px}
+.spec div{display:grid;grid-template-columns:104px minmax(0,1fr);gap:12px;padding:10px 0;border-top:1px solid var(--band-line);font-size:.92rem}
+.spec dt{padding-top:2px;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-band-muted)}
+.spec dd{margin:0}
+
+/* about */
+.about-grid{display:grid;gap:40px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.about-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
+.lead{font-size:1.2rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px;box-shadow:var(--shadow)}
+.panel h3{margin-bottom:12px}
+.panel h3:not(:first-child){margin-top:24px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chip{padding:5px 10px;border-radius:4px;border:1px solid var(--line);background:var(--bg-alt);font-family:var(--font-mono);font-size:.8rem;color:var(--fg)}
+.sec.alt .chip{background:var(--bg)}
+.ticks{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.ticks li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:start;color:var(--fg)}
+.ticks .ic{margin-top:.2em;color:var(--accent-ink)}
+
+/* skills */
+.skills{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:560px){.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.skills{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.skill{display:flex;flex-direction:column;gap:14px;min-width:0;padding:20px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.skill .ico{width:42px;height:42px;display:grid;place-items:center;border-radius:8px;background:var(--band);color:var(--accent)}
+.skill .ico .ic{width:22px;height:22px}
+.skill .chip{font-size:.76rem}
+
+/* experience */
+.timeline{display:grid;gap:20px;margin:0;padding:0;list-style:none}
+.job{display:grid;gap:10px;grid-template-columns:minmax(0,1fr)}
+.job-when{font-family:var(--font-mono);font-size:.85rem;color:var(--muted)}
+.job-rail{display:none}
+.job-card{min-width:0;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+.job-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-bottom:4px}
+.job-top h3{font-size:1.25rem}
+.job-org{margin:0 0 14px;color:var(--muted)}
+.badge{display:inline-block;padding:3px 8px;border-radius:4px;background:var(--accent);color:var(--on-accent);font-family:var(--font-mono);font-size:.68rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.badge.soft{background:var(--bg-alt);color:var(--muted);border:1px solid var(--line)}
+.dash{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.dash li{position:relative;padding-left:20px}
+.dash li::before{content:"";position:absolute;left:0;top:.8em;width:9px;height:2px;background:var(--accent-ink)}
+@media (min-width:800px){
+  .job{grid-template-columns:190px 28px minmax(0,1fr);gap:0 16px}
+  .job-when{padding-top:26px;text-align:right}
+  .job-rail{display:block;position:relative}
+  .job-rail::before{content:"";position:absolute;left:50%;top:0;bottom:-20px;width:2px;background:var(--line);transform:translateX(-50%)}
+  .job:last-child .job-rail::before{bottom:0}
+  .job-rail::after{content:"";position:absolute;left:50%;top:30px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent);transform:translateX(-50%)}
+  .job.current .job-rail::after{background:var(--accent)}
+}
+.practice-head{margin:56px 0 20px}
+.practice{display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:600px){.practice{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.practice{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.practice div{padding:18px;background:var(--card);border:1px solid var(--line);border-radius:10px;min-width:0}
+.practice h4{margin:0 0 6px;font-family:var(--font-display);font-size:1rem}
+.practice p{margin:0;color:var(--muted);font-size:.93rem}
+
+/* projects */
+.projects{display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1060px){.projects{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.proj{display:flex;flex-direction:column;gap:16px;min-width:0;padding:20px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+.proj-top{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.proj h3{font-size:1.2rem}
+.proj .role{margin:0;font-family:var(--font-mono);font-size:.78rem;color:var(--accent-ink)}
+.proj .sum{margin:0;color:var(--muted);font-size:.95rem}
+.shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.shots.n4{grid-template-columns:repeat(2,minmax(0,1fr))}
+.shot{display:block;width:100%;aspect-ratio:4/3;padding:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--placeholder);cursor:zoom-in}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.slot{display:grid;place-content:center;justify-items:center;gap:4px;border:1.5px dashed var(--placeholder-line);background:var(--placeholder);color:var(--muted);font-family:var(--font-mono);font-size:.68rem;text-align:center;cursor:default}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.res{padding:8px 10px;border:1px solid var(--line);border-radius:6px;min-width:0}
+.res b{display:block;font-family:var(--font-display);font-size:1.25rem;line-height:1.2}
+.res span{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.video{display:block;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:var(--band)}
+.video video{width:100%;height:100%;display:block;object-fit:contain;background:#000}
+.video.portrait{aspect-ratio:9/16;width:min(100%,270px);margin-inline:auto}
+.proj .video{margin-top:auto}
+.vlink{display:grid;place-content:center;justify-items:center;gap:6px;text-decoration:none;color:var(--on-band);font-weight:600;font-size:.92rem}
+.vlink .ic{width:34px;height:34px;color:var(--accent)}
+.vslot{border:1.5px dashed var(--placeholder-line);background:var(--placeholder);color:var(--muted);font-family:var(--font-mono);font-size:.68rem;font-weight:400;text-align:center}
+.vslot .ic{color:var(--muted);width:28px;height:28px}
+
+/* achievements */
+.stats{display:grid;gap:28px 24px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.stat .num{display:block;font-family:var(--font-display);font-weight:800;font-size:clamp(2.8rem,6vw,4rem);line-height:1;letter-spacing:-.03em;color:var(--accent);font-variant-numeric:tabular-nums}
+.stat .lab{display:block;margin-top:10px;font-weight:600}
+.stat .sub{display:block;margin-top:4px;color:var(--on-band-muted);font-size:.88rem}
+
+/* certificates */
+.certs{display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:600px){.certs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:600px){.certs{max-width:860px}}
+.cert{display:flex;flex-direction:column;gap:14px;min-width:0;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.cert .shot{aspect-ratio:4/3}
+.cert .slot .ic{width:26px;height:26px}
+.cert h3{font-size:1.02rem}
+.cert .when{margin:0;font-family:var(--font-mono);font-size:.76rem;color:var(--accent-ink)}
+.cert p.note{margin:0;color:var(--muted);font-size:.92rem}
+
+/* education + languages */
+.duo{display:grid;gap:40px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:800px){.duo{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.edu h3{font-size:1.35rem;margin-bottom:4px}
+.edu .meta{margin:0 0 14px;color:var(--muted)}
+.langs{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.langs li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 20px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.langs strong{font-family:var(--font-display);font-size:1.15rem}
+.langs span{color:var(--muted);text-align:right}
+
+/* testimonials */
+.slider{position:relative;max-width:760px}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:10px}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:start;min-width:0;padding:clamp(22px,4vw,36px);background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+.slide blockquote{margin:0 0 20px;font-family:var(--font-display);font-size:clamp(1.15rem,2.4vw,1.5rem);line-height:1.35}
+.slide .who{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.slide .who b{display:block}
+.slide .who span.r{color:var(--muted);font-size:.92rem}
+.slide.ph blockquote{color:var(--muted)}
+.stars{margin-bottom:12px;color:var(--accent-ink);font-size:1.25rem;letter-spacing:3px;line-height:1}
+.slider-ctl{display:flex;align-items:center;gap:12px;margin-top:16px}
+.arrow{width:44px;height:44px;display:grid;place-items:center;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.arrow:hover{border-color:var(--accent-ink)}
+.dots{display:flex;gap:6px}
+.dots button{width:12px;height:12px;padding:0;border-radius:50%;border:2px solid var(--muted);background:transparent;cursor:pointer}
+.dots button[aria-current="true"]{background:var(--accent-ink);border-color:var(--accent-ink)}
+
+/* contact */
+.contact-grid{display:grid;gap:40px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.contact-grid{grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:56px}}
+.crow{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 14px;align-items:center;padding:14px 0;border-top:1px solid var(--band-line)}
+.crow:last-child{border-bottom:1px solid var(--band-line)}
+.cic{width:42px;height:42px;display:grid;place-items:center;border-radius:8px;background:var(--band-2);color:var(--accent)}
+.clabel{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-band-muted)}
+.cval{display:block;font-family:var(--font-mono);font-size:.95rem;overflow-wrap:anywhere;user-select:text}
+.cact{display:flex;flex-wrap:wrap;gap:8px}
+@media (max-width:560px){.crow{grid-template-columns:auto minmax(0,1fr)}.cact{grid-column:1/-1}}
+.note-small{margin:16px 0 0;color:var(--on-band-muted);font-size:.9rem}
+.formcard{padding:clamp(20px,3vw,32px);background:var(--paper);color:var(--ink);border-radius:10px}
+.formcard h3{font-size:1.35rem;margin-bottom:6px}
+.formcard .hint{margin:0 0 18px;color:var(--ink-muted);font-size:.93rem}
+.field{display:grid;gap:6px;margin-bottom:14px}
+.field label{font-weight:600;font-size:.9rem}
+.field input,.field textarea{width:100%;padding:12px;border:1px solid var(--paper-line);border-radius:6px;background:#fff;color:var(--ink);font:400 1rem/1.4 var(--font-body)}
+.field textarea{min-height:120px;resize:vertical}
+.formcard :focus-visible{outline-color:#1D4ED8}
+.form-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.status-line{min-height:1.4em;margin:12px 0 0;font-size:.9rem;color:var(--ink-muted)}
+.mail-alt{display:inline-block;margin-top:10px;font-size:.9rem;color:var(--ink-muted)}
+
+/* footer */
+.foot{padding-block:32px;border-top:1px solid var(--band-line)}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center}
+.foot p{margin:0;color:var(--on-band-muted);font-size:.92rem}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+.foot nav a{color:var(--on-band);text-decoration:none;font-weight:500;font-size:.95rem}
+.foot nav a:hover{color:var(--accent)}
+
+/* floating controls */
+.float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.fab-wa{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 18px;border-radius:999px;background:var(--accent);color:var(--on-accent);font-weight:700;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.fab-wa:hover{background:var(--accent-hover)}
+.fab-top{width:44px;height:44px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--band-line);background:var(--band);color:var(--on-band);cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:56px max(16px,env(safe-area-inset-left,0px));background:rgba(5,10,28,.93)}
+.lb figure{margin:0;display:grid;gap:12px;justify-items:center;max-width:100%}
+.lb img{max-width:min(92vw,1100px);max-height:78vh;object-fit:contain;border-radius:6px;background:#fff}
+.lb figcaption{color:#D5DCEC;font-size:.9rem;text-align:center}
+.lb button{position:absolute;width:48px;height:48px;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(8,16,39,.8);color:#fff;cursor:pointer}
+.lb-close{top:calc(12px + env(safe-area-inset-top,0px));right:max(12px,env(safe-area-inset-right,0px))}
+.lb-prev{left:max(8px,env(safe-area-inset-left,0px));top:50%}
+.lb-next{right:max(8px,env(safe-area-inset-right,0px));top:50%}
+.lb.single .lb-prev,.lb.single .lb-next{display:none}
+
+/* motion */
+.reveal{transform:translateY(14px);transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{transform:none;transition:none}
+  .btn,.btn:hover{transition:none;transform:none}
+}
+/* ===== v11 look ===== */
+.hero{position:relative;overflow:hidden;background:radial-gradient(900px 480px at 85% 10%,rgba(255,153,0,.20),transparent 60%),radial-gradient(700px 420px at 0% 100%,rgba(60,110,255,.20),transparent 60%),var(--band)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse at 70% 40%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 20%,transparent 75%);pointer-events:none}
+.hero .hero-grid{position:relative}
+.hi{margin:22px 0 0;font-family:var(--font-mono);font-size:.9rem;color:var(--accent);letter-spacing:.04em}
+.hero h1{margin:6px 0 14px;font-size:clamp(3rem,9.5vw,5.6rem);background:linear-gradient(100deg,#fff 30%,#FFC46B 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.headline{color:var(--on-band)}
+.status{background:rgba(255,255,255,.05);backdrop-filter:blur(6px)}
+.dot{box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+.btn{border-radius:999px;min-height:50px;padding:0 24px}
+.btn-primary{box-shadow:0 8px 24px rgba(255,153,0,.35);background:linear-gradient(180deg,#FFAE2B,#FF9900)}
+.btn-primary:hover{box-shadow:0 12px 30px rgba(255,153,0,.5)}
+.btn-ghost{background:rgba(255,255,255,.04)}
+.herostats{display:flex;gap:clamp(18px,4vw,40px);margin:34px 0 0;padding:22px 0 0;list-style:none;border-top:1px solid var(--band-line)}
+.herostats b{display:block;font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.2rem);color:var(--accent);line-height:1}
+.herostats span{font-size:.82rem;color:var(--on-band-muted)}
+.pwrap{position:relative;width:100%;max-width:420px;margin-inline:auto}
+.pwrap::before{content:"";position:absolute;inset:18px -14px -14px 18px;border:2px solid var(--accent);border-radius:20px;opacity:.7}
+.pcard{position:relative;border-radius:20px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.fbadge{position:absolute;display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:#fff;color:var(--ink);font-weight:700;font-size:.82rem;box-shadow:0 10px 30px rgba(0,0,0,.35);animation:float 5s ease-in-out infinite}
+.fbadge .ic{color:#D97700}
+.fbadge.b1{top:22px;left:-18px}
+.fbadge.b2{top:46%;right:-14px;animation-delay:-2.2s}
+@keyframes float{50%{transform:translateY(-8px)}}
+@media (max-width:520px){.fbadge.b1{left:-6px}.fbadge.b2{right:-6px}.pwrap::before{inset:12px -8px -8px 12px}}
+
+.marquee{overflow:hidden;border-block:1px solid var(--band-line);background:var(--band-2);padding:16px 0}
+.mq-track{display:flex;gap:0;width:max-content;animation:mq 38s linear infinite;font-family:var(--font-mono);font-size:.9rem;color:var(--on-band-muted);white-space:nowrap}
+.mq-track span{display:inline-flex;align-items:center;gap:44px;padding-right:44px}
+.mq-track span::after{content:"\2726";color:var(--accent)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.sec-head[data-k]::before{content:attr(data-k);display:inline-block;margin-bottom:14px;padding:5px 12px;border-radius:999px;background:rgba(255,153,0,.14);color:var(--accent-ink);font-family:var(--font-mono);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase}
+.band .sec-head[data-k]::before{color:var(--accent)}
+.sec h2{font-weight:800}
+.sec h2::after{content:"";display:block;width:56px;height:4px;margin-top:14px;border-radius:4px;background:var(--accent)}
+.duo .sec-head h2::after{width:40px}
+
+.skill,.panel,.job-card,.proj,.cert,.practice div,.langs li{border-radius:16px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.skill:hover,.proj:hover,.cert:hover,.practice div:hover,.job-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 18px 40px rgba(13,24,48,.14)}
+.skill{position:relative;overflow:hidden}
+.skill::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--accent);transition:width .35s}
+.skill:hover::after{width:100%}
+.skill .ico{border-radius:12px;background:linear-gradient(135deg,#142857,#081027);box-shadow:0 6px 16px rgba(8,16,39,.25)}
+.chip{border-radius:999px}
+.job.current .job-card{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,153,0,.15),var(--shadow)}
+.proj{padding:22px}
+.res{background:rgba(255,153,0,.1);border-color:rgba(255,153,0,.4);border-radius:10px}
+.res b{color:var(--accent-ink)}
+.shot{border-radius:10px;transition:transform .2s,border-color .2s}
+.shot:hover{transform:scale(1.03);border-color:var(--accent)}
+.stats{gap:20px}
+.stat{padding:26px 22px;border:1px solid var(--band-line);border-radius:16px;background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.01))}
+#achievements{background:radial-gradient(600px 300px at 90% 0,rgba(255,153,0,.16),transparent 60%),var(--band)}
+
+.resume{display:grid;gap:28px;grid-template-columns:minmax(0,1fr);align-items:center}
+@media (min-width:900px){.resume{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}}
+.cvpages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.cvpage{display:block;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;cursor:zoom-in;box-shadow:0 18px 44px rgba(13,24,48,.18);transition:transform .25s}
+.cvpage:nth-child(1){transform:rotate(-1.4deg)}.cvpage:nth-child(2){transform:rotate(1.2deg)}
+.cvpage:hover{transform:rotate(0) translateY(-4px)}
+.cvpage img{display:block;width:100%;height:auto}
+.cvside h3{font-size:1.5rem;margin-bottom:8px}
+.cvside p{color:var(--muted)}
+.cvside .btn-line{color:var(--fg);border-color:var(--line)}
+.cvside .btn-line:hover{border-color:var(--accent)}
+@media (max-width:520px){.cvpages{gap:10px}}
+
+.contact-grid .sec-head h2{font-size:clamp(2rem,5vw,3.2rem)}
+#contact{background:radial-gradient(700px 360px at 100% 0,rgba(255,153,0,.2),transparent 60%),var(--band)}
+.formcard{border-radius:20px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.crow{border-radius:0}
+.cic{border-radius:12px}
+.fab-wa{box-shadow:0 8px 26px rgba(255,153,0,.5);animation:pulse2 2.6s infinite}
+@keyframes pulse2{70%{box-shadow:0 8px 26px rgba(255,153,0,.5),0 0 0 12px rgba(255,153,0,0)}}
+.lb img{max-height:82vh}
+@media (prefers-reduced-motion:reduce){.mq-track,.fbadge,.dot,.fab-wa{animation:none}.skill:hover,.proj:hover,.cert:hover,.cvpage:hover{transform:none}}
+</style>
+
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></symbol>
+<symbol id="i-hash" viewBox="0 0 24 24"><path d="M5 9h14M5 15h14M10 4L8 20M16 4l-2 16"/></symbol>
+<symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3L3 7.5v9L12 21l9-4.5v-9L12 3zM3 7.5L12 12l9-4.5M12 12v9"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 21h18M3 17l6-6 4 4 8-9"/></symbol>
+<symbol id="i-table" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M10 4v16"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+<symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.9L7 22l5-3 5 3-1.2-8.1"/></symbol>
+<symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+<symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M16 13H8M16 17H8"/></symbol>
+<symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+</defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav band" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark" id="brand-mark">IR</span><span id="brand-name">Irfan Riaz</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">CV</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Accounts</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="icon-btn theme-btn" id="theme-btn" type="button" aria-label="Switch theme"></button>
+    <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero band" aria-label="Introduction">
+    <div class="wrap hero-grid" id="hero-inner"></div>
+  </section>
+  <div class="marquee band" id="marquee"></div>
+
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="sec-head" data-k="01 / About"><h2>About me</h2><p>Who I am and how I work.</p></div>
+      <div id="about-mount"></div>
+    </div>
+  </section>
+
+  <section class="sec resume-sec" id="resume">
+    <div class="wrap">
+      <div class="sec-head" data-k="My CV"><h2>Resume</h2><p>Read my CV right here, or save a copy.</p></div>
+      <div class="resume" id="resume-mount"></div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="skills">
+    <div class="wrap">
+      <div class="sec-head" data-k="02 / Skills"><h2>Skills</h2><p>What I do day to day for Amazon and eBay sellers.</p></div>
+      <div class="skills" id="skills-mount"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="experience">
+    <div class="wrap">
+      <div class="sec-head" data-k="03 / Experience"><h2>Experience</h2><p>Three roles in Amazon and eBay since January 2025.</p></div>
+      <ol class="timeline" id="exp-mount"></ol>
+      <div class="practice-head sec-head"><h3>Practical private label project work</h3></div>
+      <div class="practice" id="practice-mount"></div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="projects">
+    <div class="wrap">
+      <div class="sec-head" data-k="04 / Proof of work"><h2>Accounts I managed</h2><p>Screenshots, results and walkthroughs from the accounts I have worked on.</p></div>
+      <div class="projects" id="projects-mount"></div>
+    </div>
+  </section>
+
+  <section class="sec band" id="achievements">
+    <div class="wrap">
+      <div class="sec-head" data-k="05 / Numbers"><h2>Achievements</h2><p>My work so far, in numbers.</p></div>
+      <div class="stats" id="stats-mount"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="certificates">
+    <div class="wrap">
+      <div class="sec-head" data-k="06 / Training"><h2>Certificates and training</h2><p>Amazon Private Label courses I completed.</p></div>
+      <div class="certs" id="certs-mount"></div>
+    </div>
+  </section>
+
+  <section class="sec alt">
+    <div class="wrap duo">
+      <div id="education"><div class="sec-head"><h2>Education</h2></div><div id="edu-mount"></div></div>
+      <div id="languages"><div class="sec-head"><h2>Languages</h2></div><ul class="langs" id="lang-mount"></ul></div>
+    </div>
+  </section>
+
+  <section class="sec" id="testimonials">
+    <div class="wrap">
+      <div class="sec-head" data-k="07 / Clients"><h2>Testimonials</h2><p>What clients and managers say about working with me.</p></div>
+      <div class="slider" id="t-mount"></div>
+    </div>
+  </section>
+
+  <section class="sec band" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <div class="sec-head"><h2>Let's talk about your account</h2><p>Message me on WhatsApp, call, email or connect on LinkedIn. I reply as soon as I can.</p></div>
+        <div id="contact-rows"></div>
+        <p class="note-small" id="contact-note"></p>
+      </div>
+      <div class="formcard">
+        <h3>Send me a message</h3>
+        <p class="hint">Fill this in and your message opens in WhatsApp, ready to send.</p>
+        <form id="contact-form" novalidate>
+          <div class="field"><label for="cf-name">Your name</label><input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Your full name"></div>
+          <div class="field"><label for="cf-email">Your email</label><input id="cf-email" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
+          <div class="field"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" placeholder="Tell me about your account or the role."></textarea></div>
+          <div class="form-actions">
+            <a class="btn btn-primary" id="cf-wa" href="#" target="_blank" rel="noopener noreferrer"></a>
+            <button class="btn btn-line" id="cf-copy" type="button"></button>
+          </div>
+          <p class="status-line" id="cf-status" role="status" aria-live="polite"></p>
+          <a class="mail-alt" id="cf-mail" href="#">Prefer email? Open an email draft instead</a>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot band">
+  <div class="wrap">
+    <div>
+      <p><strong id="foot-name"></strong></p>
+      <p id="foot-avail"></p>
+      <p id="foot-copy"></p>
+    </div>
+    <nav id="foot-links" aria-label="Social links"></nav>
+  </div>
+</footer>
+
+<div class="float">
+  <button class="fab-top" id="to-top" type="button" aria-label="Back to top" hidden></button>
+  <a class="fab-wa" id="fab-wa" href="#" target="_blank" rel="noopener noreferrer"></a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lb-close" id="lb-close" type="button" aria-label="Close image"></button>
+  <button class="lb-prev" id="lb-prev" type="button" aria-label="Previous image"></button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-next" id="lb-next" type="button" aria-label="Next image"></button>
+</div>
+
+<noscript><p style="padding:24px">This portfolio needs JavaScript turned on to show its content.</p></noscript>
+
+<script>
+/* ============================================================
+   CONTENT: edit everything on this page here.
+   - Photos and screenshots: put the image path or link in the quoted spaces
+     ("photo", "images", "image"). An empty "" shows a placeholder.
+   - Videos: use {type:"link", url:"https://youtu.be/..."} or {type:"mp4", src:"video.mp4"}.
+   - Add, remove or reorder cards by copying a { ... } block inside its list.
+   - Counters: change "value", or set show:true on the hidden ones once you have real numbers.
+   ============================================================ */
+const CONTENT = {
+  site: {
+    name: "Irfan Riaz",
+    headline: ["Amazon Virtual Assistant", "FBA Private Label", "PPC Specialist"],
+    tagline: "I help Amazon and eBay sellers find profitable products, rank their listings and stop wasting ad spend.",
+    availability: "Available immediately · Remote or on-site (Lahore)",
+    facts: [
+      ["Role", "Amazon VA · PPC"],
+      ["Marketplaces", "Amazon, eBay"],
+      ["Based in", "Lahore, Pakistan"],
+      ["Languages", "English, Urdu"],
+      ["Open to", "Remote or on-site"]
+    ]
+  },
+  media: {
+    photo: "assets/me.jpg",
+    cv: "Irfan_Riaz_Resume.pdf",
+    cvPages: ["assets/cv-page-1.jpg", "assets/cv-page-2.jpg"]
+  },
+  contact: {
+    phoneDisplay: "+92 328 8318737",
+    phoneDial: "+923288318737",
+    whatsapp: "923288318737",
+    whatsappMessage: "Hi Irfan, I saw your portfolio and I would like to talk.",
+    email: "irfanriaz041@gmail.com",
+    linkedin: "https://www.linkedin.com/in/irfan-riaz-61658041a/",
+    linkedinDisplay: "linkedin.com/in/irfan-riaz-61658041a"
+  },
+  about: {
+    paragraphs: [
+      "I am a results-driven Amazon FBA and Private Label professional with practical training and project experience in product research, keyword research, listing optimization, competitor analysis, Alibaba sourcing and PPC campaign management.",
+      "I understand how the A9 and A10 ranking algorithms, marketplace SEO and product launch strategy fit together. I support e-commerce sellers with high-converting listings, profitable product selection, accurate performance reporting and advertising that drives organic growth and sales."
+    ],
+    tools: ["Amazon Seller Central", "Helium 10", "Jungle Scout", "Keepa", "Seller AMP"],
+    strengths: [
+      "Reads Keepa graphs, sales estimates and keyword metrics to make product decisions.",
+      "Checks every title, bullet and backend keyword for relevance and wasted spend.",
+      "Knows the full private label path, from idea validation to supplier research and ad setup.",
+      "Works independently and reports findings in clear trackers and sheets."
+    ]
+  },
+  skills: [
+    { icon: "search", title: "Product Research", tags: ["Niche validation", "Competition scoring", "Profit and break-even", "Seasonality checks"] },
+    { icon: "hash", title: "Keyword Research", tags: ["Helium 10 Magnet", "Helium 10 Cerebro", "Long-tail terms", "Keyword prioritization"] },
+    { icon: "layout", title: "Listing SEO and A+ Content", tags: ["Titles", "Bullet points", "Backend keywords", "A+ / EBC", "A9 / A10 ranking"] },
+    { icon: "target", title: "PPC", tags: ["Auto and Manual", "Exact, Phrase, Broad", "Search-term harvesting", "Negative targeting", "Bid strategy", "eBay Promoted Listings"] },
+    { icon: "box", title: "Alibaba Sourcing", tags: ["Supplier shortlisting", "MOQ and price comparison", "Sample evaluation", "Negotiation basics"] },
+    { icon: "chart", title: "Keepa Analysis", tags: ["Sales rank history", "Price history", "BSR trends", "Review patterns"] },
+    { icon: "table", title: "Excel and Google Sheets", tags: ["Pivot tables", "VLOOKUP / XLOOKUP", "Conditional formatting", "Trackers and reports"] },
+    { icon: "pen", title: "Design and Productivity", tags: ["Canva", "Trello", "Notion", "Google Workspace", "Microsoft Office"] }
+  ],
+  experience: [
+    {
+      role: "eBay PPC Specialist",
+      company: "M98M Global",
+      place: "Johar Town, Lahore",
+      dates: "15 Apr 2026 – Present",
+      current: true,
+      points: [
+        "Set up, structure, monitor and optimize eBay Promoted Listings campaigns to match advertising spend with product and account goals.",
+        "Review campaign metrics, search-term reports and conversion data to find high-ROI keywords and cut wasted ad spend.",
+        "Handle keyword and product targeting, budget allocation, bid adjustments and weekly and monthly performance reports.",
+        "Work with the account team so advertising supports listing visibility and sales targets."
+      ]
+    },
+    {
+      role: "Amazon Private Label Specialist",
+      company: "Adventure Lab",
+      place: "DHA, Lahore",
+      dates: "3 Apr 2025 – 10 Apr 2026",
+      points: [
+        "Ran end-to-end product research and niche validation with Helium 10, Jungle Scout, Keepa and Seller AMP.",
+        "Analyzed competitors for estimated monthly sales, pricing, review velocity, listing quality and FBA fees to find market gaps.",
+        "Created and optimized listings: SEO titles, benefit-driven bullets, descriptions, backend search terms and A+ Content modules.",
+        "Supported the full PPC lifecycle: campaign structure, match types, bidding logic, search-term harvesting and negative keywords.",
+        "Maintained product data, inventory sheets and performance dashboards in Excel and Google Sheets, plus daily Seller Central tasks.",
+        "Prepared product launches: keyword prioritization, listing readiness checks and initial ad setup for new ASINs."
+      ]
+    },
+    {
+      role: "Amazon Private Label Intern",
+      company: "UET",
+      place: "Lahore",
+      dates: "5 Jan 2025 – 31 Mar 2025",
+      points: [
+        "Supported product, market and competitor research to shortlist viable private label niches.",
+        "Did keyword research and helped optimize titles, bullet points and backend keywords.",
+        "Organized and analyzed product data in Excel and Google Sheets.",
+        "Learned Seller Central navigation, product research workflows and basic campaign performance reading."
+      ]
+    }
+  ],
+  practice: [
+    { title: "Product hunting", text: "Demand validation, competition scoring, profit margin and break-even math, and seasonality checks on Keepa graphs." },
+    { title: "Keyword research", text: "High-relevance, high-volume and long-tail terms pulled with Helium 10 Magnet and Cerebro." },
+    { title: "Listings and A+ Content", text: "SEO titles, bullets and backend keywords, with A+ / EBC layouts built around brand story and conversion." },
+    { title: "Competitor analysis", text: "Listings, price history, BSR trends and review patterns, turned into positioning and pricing recommendations." },
+    { title: "PPC frameworks", text: "Auto and Manual campaigns, match types, bidding strategies and search-term optimization worked through case studies." },
+    { title: "Alibaba sourcing", text: "Supplier shortlists compared on MOQ, unit price, sample quality, lead time, shipping and responsiveness." }
+  ],
+  /* Replace these three sample cards with your real accounts.
+     images: up to as many screenshots as you like. video: link or mp4. */
+  projects: [
+    {
+      brand: "Amazon UK listings",
+      role: "Listing SEO and A+ Content",
+      summary: "Listing creation and optimization with SEO titles, bullet points and A+ Content. ASINs, SKUs and brand names are hidden.",
+      results: [],
+      images: [
+        { src: "assets/amazon-aplus-content.jpg", alt: "A+ Content on an Amazon product page, with copy partly hidden" },
+        { src: "assets/amazon-catalogue.jpg", alt: "Amazon Seller Central catalogue of variation families, with titles, ASINs and SKUs hidden" },
+        { src: "assets/amazon-inventory.jpg", alt: "Amazon Manage All Inventory page showing 965 listings and 30 day sales for a listing, with identifiers hidden" }
+      ],
+      video: { type: "mp4", url: "", src: "assets/amazon-listings-walkthrough.mp4", portrait: true }
+    },
+    {
+      brand: "Amazon Ads account (UK)",
+      role: "Amazon PPC",
+      summary: "Sponsored Products and Sponsored Display campaigns with manual and automatic targeting. Figures shown are one portfolio over the last 30 days.",
+      results: [{ label: "ROAS", value: "9.51" }, { label: "ACOS", value: "10.52%" }, { label: "Sales 30d", value: "£548.74" }],
+      images: [
+        { src: "assets/amazon-campaigns.jpg", alt: "Amazon Ads campaign list showing Sponsored Products and Sponsored Display campaigns, status and targeting" },
+        { src: "assets/amazon-portfolio-chart.jpg", alt: "Amazon Ads portfolio performance chart showing sales and ROAS over time" },
+        { src: "assets/amazon-portfolio-tapes.jpg", alt: "Amazon Ads portfolio with total cost, sales, ROAS 9.51 and ACOS 10.52 percent for the last 30 days" }
+      ],
+      video: { type: "mp4", url: "", src: "assets/amazon-ppc-walkthrough.mp4", portrait: true }
+    },
+    {
+      brand: "eBay Seller Hub accounts (UK)",
+      role: "eBay Promoted Listings",
+      summary: "Promoted Listings campaigns across seller accounts. Dashboard screenshots and a screen recording, with account names hidden.",
+      results: [],
+      images: [
+        { src: "assets/ebay-dashboard-a.jpg", alt: "eBay Seller Hub campaigns showing 626 clicks, 300.81 pounds in sales and ROAS 3.16" },
+        { src: "assets/ebay-dashboard-b.jpg", alt: "eBay Seller Hub campaigns showing 952 clicks, 637 pounds in sales and ROAS 4.20" },
+        { src: "assets/ebay-dashboard-c.jpg", alt: "eBay Seller Hub campaigns showing 596 clicks, 367 pounds in sales and ROAS 3.99, with account details hidden" },
+        { src: "assets/ebay-campaigns.jpg", alt: "eBay Seller Hub campaigns dashboard showing clicks, sales, ad fees and ROAS" }
+      ],
+      video: { type: "mp4", url: "", src: "assets/ebay-walkthrough.mp4", portrait: true }
+    }
+  ],
+  stats: [
+    { value: 3, label: "Roles held", sub: "Intern to PPC specialist" },
+    { value: 2, label: "Marketplaces", sub: "Amazon and eBay" },
+    { value: 5, label: "Seller tools", sub: "Seller Central, Helium 10, Jungle Scout, Keepa, Seller AMP" },
+    { value: 2, label: "Certificates", sub: "H University and DigiSkills.pk" },
+    /* Turn these on when you have real numbers: set show:true and edit value. */
+    { value: 0, suffix: "+", label: "Accounts managed", sub: "", show: false },
+    { value: 0, suffix: "+", label: "Products launched", sub: "", show: false },
+    { value: 0, suffix: "+", label: "Listings optimized", sub: "", show: false },
+    { value: 0, prefix: "$", suffix: "+", label: "Ad spend managed", sub: "", show: false }
+  ],
+  certificates: [
+    { title: "Amazon Private Label", issuer: "The H University", dates: "Sep – Nov 2024", note: "Product research, listing optimization, keyword strategy and FBA fundamentals.", image: "assets/cert-h-university.jpg" },
+    { title: "Amazon Private Label", issuer: "DigiSkills.pk", dates: "Apr – Jul 2025", note: "Private Label operations, Seller Central and e-commerce best practices.", image: "assets/cert-digiskills.jpg" },
+  ],
+  education: {
+    degree: "BS in Mathematics",
+    school: "University of Education, Lahore",
+    years: "2019 – 2023",
+    note: "Built strong analytical, problem-solving and quantitative skills that I use in data analysis, product research and performance evaluation."
+  },
+  languages: [
+    { name: "English", level: "Professional working proficiency" },
+    { name: "Urdu", level: "Native proficiency" }
+  ],
+  /* To add another quote, copy a whole { ... } line and add a comma after the one above it.
+     rating is optional (1 to 5 stars). Delete the whole list to hide this section. */
+  testimonials: [
+    { quote: "I'm very happy with the support and professionalism. Communication was clear, tasks were handled carefully, and the work made managing my Amazon store much easier. I would gladly recommend this VA.", name: "Mary", role: "Client, USA", rating: 5 }
+  ]
+};
+
+/* ============================================================
+   Everything below builds the page from CONTENT.
+   ============================================================ */
+const C = CONTENT;
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const ic = n => `<svg class="ic" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const ext = 'target="_blank" rel="noopener noreferrer"';
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const wa = msg => `https://wa.me/${C.contact.whatsapp}?text=${encodeURIComponent(msg == null ? C.contact.whatsappMessage : msg)}`;
+const groups = [];
+const addGroup = items => { groups.push(items); return groups.length - 1; };
+const slotHTML = (label, cls = "shot") => `<div class="${cls} slot" role="img" aria-label="${esc(label)}">${ic("image")}<span>${esc(label)}</span></div>`;
+const zoomHTML = (g, i) => {
+  const it = groups[g][i];
+  return `<button type="button" class="shot" data-g="${g}" data-i="${i}" aria-label="Enlarge: ${esc(it.alt)}"><img src="${esc(it.src)}" alt="${esc(it.alt)}" loading="lazy" decoding="async"></button>`;
+};
+
+/* nav, brand, theme */
+const root = document.documentElement;
+const initials = C.site.name.split(/\s+/).map(w => w[0]).join("").slice(0, 2).toUpperCase();
+$("#brand-mark").textContent = initials;
+$("#brand-name").textContent = C.site.name;
+const themeBtn = $("#theme-btn");
+const effTheme = () => root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+const paintThemeBtn = () => {
+  const dark = effTheme() === "dark";
+  themeBtn.innerHTML = ic(dark ? "sun" : "moon");
+  themeBtn.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+};
+try { const t = localStorage.getItem("irfan-theme"); if (t === "dark" || t === "light") root.dataset.theme = t; } catch (e) {}
+paintThemeBtn();
+themeBtn.addEventListener("click", () => {
+  const next = effTheme() === "dark" ? "light" : "dark";
+  root.dataset.theme = next;
+  try { localStorage.setItem("irfan-theme", next); } catch (e) {}
+  paintThemeBtn();
+});
+const nav = $(".nav"), menuBtn = $("#menu-btn");
+const paintMenu = open => {
+  menuBtn.innerHTML = ic(open ? "x" : "menu");
+  menuBtn.setAttribute("aria-expanded", String(open));
+  menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+};
+paintMenu(false);
+menuBtn.addEventListener("click", () => { const open = !nav.classList.contains("open"); nav.classList.toggle("open", open); paintMenu(open); });
+$("#nav-links").addEventListener("click", e => { if (e.target.closest("a")) { nav.classList.remove("open"); paintMenu(false); } });
+
+/* hero */
+const cvGroup = addGroup(C.media.cvPages.map((s, i) => ({ src: s, alt: `Irfan Riaz CV, page ${i + 1}` })));
+(function () {
+  const s = C.site, m = C.media;
+  const photo = m.photo ? `<img src="${esc(m.photo)}" alt="Portrait of ${esc(s.name)}">` : `<span class="mono-big" aria-hidden="true">${esc(initials)}</span>`;
+  $("#hero-inner").innerHTML = `
+    <div>
+      <p class="status"><span class="dot" aria-hidden="true"></span>${esc(s.availability)}</p>
+      <p class="hi">Hello, I am</p>
+      <h1>${esc(s.name)}</h1>
+      <p class="headline">${s.headline.map(h => `<span>${esc(h)}</span>`).join("")}</p>
+      <p class="tagline">${esc(s.tagline)}</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#contact">${ic("mail")}Hire Me</a>
+        <a class="btn btn-ghost" href="${wa()}" ${ext}>${ic("chat")}WhatsApp Me</a>
+        <button class="btn btn-ghost" type="button" data-g="${cvGroup}" data-i="0">${ic("file")}View CV</button>
+      </div>
+      <ul class="herostats" aria-label="Highlights">
+        <li><b>${C.experience.length}</b><span>Roles</span></li>
+        <li><b>2</b><span>Marketplaces</span></li>
+        <li><b>9.5x</b><span>Best ROAS</span></li>
+      </ul>
+    </div>
+    <div class="pwrap">
+      <aside class="pcard" aria-label="Profile details">
+        <div class="photo">${photo}</div>
+        <dl class="spec">${s.facts.map(f => `<div><dt>${esc(f[0])}</dt><dd>${esc(f[1])}</dd></div>`).join("")}</dl>
+      </aside>
+      <span class="fbadge b1">${ic("target")}PPC Specialist</span>
+      <span class="fbadge b2">${ic("box")}FBA Private Label</span>
+    </div>`;
+})();
+
+/* tools marquee */
+(function () {
+  const items = [...C.about.tools, "Canva", "Google Sheets", "Alibaba", "eBay Promoted Listings", "Amazon PPC", "A+ Content"];
+  const row = items.map(t => `<span>${esc(t)}</span>`).join("");
+  $("#marquee").innerHTML = `<div class="mq-track" aria-hidden="true">${row}${row}</div><p class="sr-only">Tools: ${esc(items.join(", "))}</p>`;
+})();
+
+/* resume */
+(function () {
+  const m = C.media;
+  $("#resume-mount").innerHTML = `
+    <div class="cvpages">${m.cvPages.map((s, i) => `
+      <button type="button" class="cvpage reveal" data-g="${cvGroup}" data-i="${i}" aria-label="Enlarge CV page ${i + 1}"><img src="${esc(s)}" alt="CV page ${i + 1}" loading="lazy" decoding="async"></button>`).join("")}</div>
+    <div class="cvside reveal">
+      <h3>Irfan Riaz, CV</h3>
+      <p>Amazon Virtual Assistant, FBA Private Label and PPC specialist. Two pages, updated for 2026.</p>
+      <div class="btns" style="margin-top:20px">
+        <button class="btn btn-primary" type="button" data-g="${cvGroup}" data-i="0">${ic("file")}Read CV</button>
+        <a class="btn btn-line" href="${esc(m.cv)}" download="Irfan_Riaz_Resume.pdf">${ic("ext")}Download PDF</a>
+      </div>
+    </div>`;
+})();
+
+/* about */
+$("#about-mount").innerHTML = `
+  <div class="about-grid">
+    <div class="reveal">${C.about.paragraphs.map((p, i) => `<p${i ? "" : ' class="lead"'}>${esc(p)}</p>`).join("")}</div>
+    <div class="panel reveal">
+      <h3>Tools I use</h3>
+      <ul class="chips">${C.about.tools.map(t => `<li class="chip">${esc(t)}</li>`).join("")}</ul>
+      <h3>How I work</h3>
+      <ul class="ticks">${C.about.strengths.map(t => `<li>${ic("check")}<span>${esc(t)}</span></li>`).join("")}</ul>
+    </div>
+  </div>`;
+
+/* skills */
+$("#skills-mount").innerHTML = C.skills.map(g => `
+  <article class="skill reveal">
+    <span class="ico">${ic(g.icon)}</span>
+    <h3>${esc(g.title)}</h3>
+    <ul class="chips">${g.tags.map(t => `<li class="chip">${esc(t)}</li>`).join("")}</ul>
+  </article>`).join("");
+
+/* experience */
+$("#exp-mount").innerHTML = C.experience.map(j => `
+  <li class="job reveal${j.current ? " current" : ""}">
+    <div class="job-when">${esc(j.dates)}</div>
+    <div class="job-rail" aria-hidden="true"></div>
+    <div class="job-card">
+      <div class="job-top"><h3>${esc(j.role)}</h3>${j.current ? '<span class="badge">Current</span>' : ""}</div>
+      <p class="job-org">${esc(j.company)} · ${esc(j.place)}</p>
+      <ul class="dash">${j.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul>
+    </div>
+  </li>`).join("");
+$("#practice-mount").innerHTML = C.practice.map(p => `<div class="reveal"><h4>${esc(p.title)}</h4><p>${esc(p.text)}</p></div>`).join("");
+
+/* projects */
+$("#projects-mount").innerHTML = C.projects.map(p => {
+  const imgs = (p.images || []).map((im, i) => typeof im === "string" ? { src: im, alt: `${p.brand} screenshot ${i + 1}` } : { src: im.src, alt: im.alt || `${p.brand} screenshot ${i + 1}` });
+  const g = imgs.length ? addGroup(imgs) : -1;
+  const count = Math.max(3, imgs.length);
+  let shots = "";
+  for (let i = 0; i < count; i++) shots += i < imgs.length ? zoomHTML(g, i) : slotHTML(`Screenshot ${i + 1}`);
+  const v = p.video || {};
+  let video;
+  if (v.type === "mp4" && v.src) video = `<div class="video${v.portrait ? " portrait" : ""}"><video controls preload="metadata" playsinline src="${esc(v.src)}"></video></div>`;
+  else if (v.type === "link" && v.url) video = `<a class="video vlink" href="${esc(v.url)}" ${ext}>${ic("play")}<span>Watch the walkthrough</span></a>`;
+  else video = `<div class="video vlink vslot">${ic("play")}<span>Video walkthrough</span></div>`;
+  const res = (p.results || []).map(r => `<div class="res"><b>${esc(r.value)}</b><span>${esc(r.label)}</span></div>`).join("");
+  return `
+  <article class="proj reveal">
+    <div class="proj-top">${p.placeholder ? '<span class="badge soft">Sample card</span>' : ""}<h3>${esc(p.brand)}</h3><p class="role">${esc(p.role)}</p></div>
+    <p class="sum">${esc(p.summary)}</p>
+    <div class="shots${count === 4 ? " n4" : ""}">${shots}</div>
+    ${res ? `<div class="results">${res}</div>` : ""}
+    ${video}
+  </article>`;
+}).join("");
+
+/* achievements */
+$("#stats-mount").innerHTML = C.stats.filter(s => s.show !== false).map(s => `
+  <div class="stat reveal">
+    <span class="num" data-to="${esc(s.value)}" data-prefix="${esc(s.prefix || "")}" data-suffix="${esc(s.suffix || "")}">${esc((s.prefix || "") + Number(s.value).toLocaleString("en-US") + (s.suffix || ""))}</span>
+    <span class="lab">${esc(s.label)}</span>
+    ${s.sub ? `<span class="sub">${esc(s.sub)}</span>` : ""}
+  </div>`).join("");
+
+/* certificates */
+$("#certs-mount").innerHTML = C.certificates.map(c => {
+  const title = `${c.title}, ${c.issuer}`;
+  const shot = c.image ? (() => { const g = addGroup([{ src: c.image, alt: `Certificate: ${title}` }]); return zoomHTML(g, 0); })() : slotHTML("Certificate image");
+  return `
+  <article class="cert reveal">
+    ${shot}
+    <div>${ic("award")}</div>
+    <h3>${esc(c.title)}</h3>
+    <p class="note"><strong>${esc(c.issuer)}</strong></p>
+    ${c.dates ? `<p class="when">${esc(c.dates)}</p>` : ""}
+    <p class="note">${esc(c.note)}</p>
+  </article>`;
+}).join("");
+
+/* education, languages */
+const ed = C.education;
+$("#edu-mount").innerHTML = `
+  <div class="panel edu reveal">
+    <h3>${esc(ed.degree)}</h3>
+    <p class="meta">${esc(ed.school)} · <span class="mono">${esc(ed.years)}</span></p>
+    <p style="margin:0">${esc(ed.note)}</p>
+  </div>`;
+$("#lang-mount").innerHTML = C.languages.map(l => `<li class="reveal"><strong>${esc(l.name)}</strong><span>${esc(l.level)}</span></li>`).join("");
+
+/* testimonials */
+(function () {
+  const list = C.testimonials;
+  if (!list.length) { $("#testimonials").hidden = true; return; }
+  $("#t-mount").innerHTML = `
+    <div class="track" id="t-track" tabindex="0" aria-label="Testimonials">
+      ${list.map(t => `
+        <figure class="slide${t.placeholder ? " ph" : ""}" style="margin:0">
+          ${t.rating ? `<div class="stars" role="img" aria-label="${esc(t.rating)} out of 5 stars">${"★".repeat(Math.min(5, t.rating))}</div>` : ""}
+          <blockquote>${esc(t.quote)}</blockquote>
+          <figcaption class="who"><span><b>${esc(t.name)}</b><span class="r">${esc(t.role)}</span></span>${t.placeholder ? '<span class="badge soft">Placeholder</span>' : ""}</figcaption>
+        </figure>`).join("")}
+    </div>
+    ${list.length > 1 ? `
+    <div class="slider-ctl">
+      <button class="arrow" id="t-prev" type="button" aria-label="Previous testimonial">${ic("left")}</button>
+      <button class="arrow" id="t-next" type="button" aria-label="Next testimonial">${ic("right")}</button>
+      <div class="dots" id="t-dots">${list.map((_, i) => `<button type="button" data-d="${i}" aria-label="Show testimonial ${i + 1}"></button>`).join("")}</div>
+    </div>` : ""}`;
+  const track = $("#t-track");
+  if (list.length < 2) return;
+  const behavior = reduce ? "auto" : "smooth";
+  const dots = [...document.querySelectorAll("#t-dots button")];
+  const paint = () => { const i = Math.round(track.scrollLeft / track.clientWidth); dots.forEach((d, k) => d.setAttribute("aria-current", String(k === i))); };
+  track.addEventListener("scroll", paint, { passive: true });
+  $("#t-prev").addEventListener("click", () => track.scrollBy({ left: -track.clientWidth, behavior }));
+  $("#t-next").addEventListener("click", () => track.scrollBy({ left: track.clientWidth, behavior }));
+  dots.forEach(d => d.addEventListener("click", () => track.scrollTo({ left: track.clientWidth * +d.dataset.d, behavior })));
+  paint();
+})();
+
+/* contact */
+const ct = C.contact;
+const rows = [
+  { icon: "chat", label: "WhatsApp", value: ct.phoneDisplay, copy: ct.phoneDisplay, href: wa(), ext: true, act: "Open chat" },
+  { icon: "phone", label: "Phone", value: ct.phoneDisplay, copy: ct.phoneDisplay, href: `tel:${ct.phoneDial}`, act: "Call" },
+  { icon: "mail", label: "Email", value: ct.email, copy: ct.email, href: `mailto:${ct.email}`, act: "Write" },
+  { icon: "link", label: "LinkedIn", value: ct.linkedinDisplay, copy: ct.linkedin, href: ct.linkedin, ext: true, act: "View profile" }
+];
+$("#contact-rows").innerHTML = rows.map((r, i) => `
+  <div class="crow">
+    <span class="cic">${ic(r.icon)}</span>
+    <div><span class="clabel">${esc(r.label)}</span><span class="cval" id="cval-${i}">${esc(r.value)}</span></div>
+    <div class="cact">
+      <a class="btn btn-ghost btn-sm" href="${esc(r.href)}"${r.ext ? " " + ext : ""}>${esc(r.act)}</a>
+      <button class="btn btn-ghost btn-sm" type="button" data-copy="${esc(r.copy)}" data-select="#cval-${i}">${ic("copy")}<span class="lbl">Copy</span></button>
+    </div>
+  </div>`).join("");
+$("#contact-note").textContent = "If a call or email button does nothing on your device, copy the number or address and use it directly.";
+
+async function copyText(text, btn, selectSel) {
+  const lbl = btn.querySelector(".lbl");
+  const old = lbl ? lbl.textContent : "";
+  let label = "Copied";
+  try { await navigator.clipboard.writeText(text); }
+  catch (e) {
+    label = "Selected";
+    const node = selectSel && $(selectSel);
+    if (node) { const r = document.createRange(); r.selectNodeContents(node); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+  }
+  if (lbl) { lbl.textContent = label; setTimeout(() => { lbl.textContent = old; }, 1600); }
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-copy]");
+  if (b) copyText(b.dataset.copy, b, b.dataset.select);
+});
+
+const f = { name: $("#cf-name"), email: $("#cf-email"), msg: $("#cf-msg") };
+const sendBtn = $("#cf-wa"), copyBtn = $("#cf-copy"), mailAlt = $("#cf-mail"), statusEl = $("#cf-status");
+sendBtn.innerHTML = `${ic("chat")}Open in WhatsApp`;
+copyBtn.innerHTML = `${ic("copy")}<span class="lbl">Copy message</span>`;
+const compose = () => {
+  const n = f.name.value.trim(), em = f.email.value.trim(), m = f.msg.value.trim();
+  return `Hi Irfan, I saw your portfolio.\n\n${m}\n\nFrom ${n}${em ? " (" + em + ")" : ""}`;
+};
+const sync = () => {
+  const text = compose();
+  sendBtn.href = wa(text);
+  mailAlt.href = `mailto:${ct.email}?subject=${encodeURIComponent("Portfolio enquiry from " + (f.name.value.trim() || "a visitor"))}&body=${encodeURIComponent(text)}`;
+};
+const valid = () => {
+  if (!f.name.value.trim()) { statusEl.textContent = "Add your name first."; f.name.focus(); return false; }
+  if (!f.msg.value.trim()) { statusEl.textContent = "Write a short message first."; f.msg.focus(); return false; }
+  const em = f.email.value.trim();
+  if (em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) { statusEl.textContent = "That email address does not look right."; f.email.focus(); return false; }
+  return true;
+};
+Object.values(f).forEach(el => el.addEventListener("input", () => { sync(); statusEl.textContent = ""; }));
+sendBtn.addEventListener("click", e => {
+  if (!valid()) { e.preventDefault(); return; }
+  sync();
+  statusEl.textContent = "Your message is ready in WhatsApp. Press send there to deliver it.";
+});
+copyBtn.addEventListener("click", () => { if (valid()) copyText(compose(), copyBtn, null); });
+$("#contact-form").addEventListener("submit", e => { e.preventDefault(); valid(); });
+sync();
+
+/* footer and floating controls */
+$("#foot-name").textContent = C.site.name;
+$("#foot-avail").textContent = C.site.availability;
+$("#foot-copy").textContent = `© ${new Date().getFullYear()} ${C.site.name}`;
+$("#foot-links").innerHTML = `
+  <a href="${wa()}" ${ext}>WhatsApp</a>
+  <a href="${esc(ct.linkedin)}" ${ext}>LinkedIn</a>
+  <a href="mailto:${esc(ct.email)}">${esc(ct.email)}</a>
+  <a href="#resume">CV</a>`;
+const fab = $("#fab-wa");
+fab.href = wa();
+fab.innerHTML = `${ic("chat")}<span>WhatsApp</span>`;
+fab.setAttribute("aria-label", "Chat on WhatsApp");
+const toTop = $("#to-top");
+toTop.innerHTML = ic("up");
+toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" }));
+addEventListener("scroll", () => { toTop.hidden = window.scrollY < 600; }, { passive: true });
+
+/* lightbox */
+const lb = $("#lb"), lbImg = $("#lb-img"), lbCap = $("#lb-cap");
+$("#lb-close").innerHTML = ic("x");
+$("#lb-prev").innerHTML = ic("left");
+$("#lb-next").innerHTML = ic("right");
+let cur = { g: -1, i: 0 }, opener = null;
+const showLB = () => {
+  const list = groups[cur.g], it = list[cur.i];
+  lbImg.src = it.src; lbImg.alt = it.alt;
+  lbCap.textContent = it.alt + (list.length > 1 ? ` (${cur.i + 1} of ${list.length})` : "");
+  lb.classList.toggle("single", list.length < 2);
+};
+const openLB = (g, i, btn) => { cur = { g, i }; opener = btn; showLB(); lb.hidden = false; document.body.style.overflow = "hidden"; $("#lb-close").focus(); };
+const closeLB = () => { lb.hidden = true; document.body.style.overflow = ""; lbImg.removeAttribute("src"); if (opener) opener.focus(); };
+const stepLB = d => { const n = groups[cur.g].length; cur.i = (cur.i + d + n) % n; showLB(); };
+document.addEventListener("click", e => { const z = e.target.closest("[data-g]"); if (z) openLB(+z.dataset.g, +z.dataset.i, z); });
+$("#lb-close").addEventListener("click", closeLB);
+$("#lb-prev").addEventListener("click", () => stepLB(-1));
+$("#lb-next").addEventListener("click", () => stepLB(1));
+lb.addEventListener("click", e => { if (e.target === lb) closeLB(); });
+document.addEventListener("keydown", e => {
+  if (lb.hidden) return;
+  if (e.key === "Escape") closeLB();
+  else if (e.key === "ArrowLeft" && groups[cur.g].length > 1) stepLB(-1);
+  else if (e.key === "ArrowRight" && groups[cur.g].length > 1) stepLB(1);
+});
+
+/* scroll effects */
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+  const counters = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      counters.unobserve(en.target);
+      if (reduce) return;
+      const el = en.target, to = Number(el.dataset.to), pre = el.dataset.prefix, suf = el.dataset.suffix, t0 = performance.now(), dur = 1100;
+      const step = t => {
+        const p = Math.min(1, (t - t0) / dur);
+        el.textContent = pre + Math.round(to * (1 - Math.pow(1 - p, 3))).toLocaleString("en-US") + suf;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll(".num").forEach(el => counters.observe(el));
+
+  const links = [...document.querySelectorAll("#nav-links a")];
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      links.forEach(a => a.setAttribute("aria-current", String(a.getAttribute("href") === "#" + en.target.id)));
+    });
+  }, { rootMargin: "-40% 0px -55% 0px" });
+  links.forEach(a => { const s = document.querySelector(a.getAttribute("href")); if (s) spy.observe(s); });
+} else {
+  document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
+}
+</script>
+
+</body>
+</html>
